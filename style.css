@@ -1,0 +1,631 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Header */
+.main-header {
+  background: #fff;
+  color: #000;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 70px;
+  height: auto;
+}
+
+.logo-text h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #004d00;
+  letter-spacing: 0.1px;
+}
+
+.logo-text p {
+  font-size: 12px;
+  color: #333;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.booking-btn {
+  background: #d93900;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-size: 44px;
+  margin: 10px 0;
+}
+
+.hero-content .highlight {
+  color: #ffcc66;
+  font-weight: bold;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #e63900;
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/*--------------cards-------*/
+
+.tours-section {
+  background: #fffaf2;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.tours-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tours-header h2 span {
+  color: #d93900;
+  font-weight: bold;
+}
+
+.tours-header p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #444;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tour-card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+  color: #000;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+
+.tour-card:hover {
+  transform: scale(1.03);
+}
+
+.tour-image{
+	position:relative;
+	top:280px;
+	width:70%;
+  bottom: 0;
+}
+
+.tour-info-box {
+  background: #003322;
+  color: white;
+  padding: 15px;
+  bottom: 0;
+  width: 100%;
+}
+
+.tour-info-box h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.tour-info-box .location {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #ffccd5;
+}
+
+.tour-info-box .duration {
+  font-size: 13px;
+  color: #f2c36b;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.tour-info-box .price {
+  font-size: 14px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #ff8888;
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.new-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.enquire-btn {
+  background: #d93900;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+/*---------------------------------------------*/
+.features-section {
+  background: #fffaf2;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+}
+
+.feature img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+.learn-btn {
+  background: #d93900;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #102b1f url('bg-pattern.png') no-repeat right bottom;
+  background-size: cover;
+  padding: 60px 40px;
+  color: white;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.about-text span {
+  color: #d7b96f;
+  font-weight: bold;
+}
+
+.about-box {
+  max-width: 500px;
+  background: #0f2d1f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eee;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background: #5e7e6e;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonial-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.testimonial-section span {
+  color: #c6331a;
+  font-weight: bold;
+}
+
+.testimonial-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+blockquote {
+  max-width: 600px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Arrows */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Share Section */
+.share-moment-section {
+  background: #fffaf2;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.share-moment-section h2 {
+  font-size: 28px;
+  color: #004d00;
+  margin-bottom: 10px;
+}
+
+.share-moment-section span {
+  color: #d93900;
+  font-weight: bold;
+}
+
+.share-moment-section p {
+  font-size: 16px;
+  color: #444;
+}
+
+.footer {
+  background: #fffaf2;
+  padding: 60px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: #222;
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.footer-logo h3 {
+  color: #004d00;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.footer-logo p {
+  font-size: 18px;
+  margin: 0;
+  color: #555;
+  font-weight: 800;
+
+}
+
+.footer-left p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+
+}
+
+.footer-left span {
+  color: #d93900;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.footer-actions {
+  margin-top: 20px;
+}
+
+.footer-actions .book-btn {
+  background: #003322;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets (width ≤ 768px) */
+@media screen and (max-width: 768px) {
+  header.main-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+
+  .hero-content p,
+  .cta-btn {
+    font-size: 14px;
+  }
+
+  .tours-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .features-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .testimonial-content {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-actions {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Devices (width ≤ 480px) */
+@media screen and (max-width: 480px) {
+  header.main-header {
+    padding: 10px 20px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content h2 {
+    font-size: 16px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .cta-btn,
+  .book-btn,
+  .booking-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .tour-card {
+    width: 100%;
+  }
+
+  .tour-info-box h3 {
+    font-size: 15px;
+  }
+
+  .enquire-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .features-icons {
+    gap: 16px;
+  }
+
+  .share-moment-section h2 {
+    font-size: 20px;
+  }
+
+  .footer-logo h3 {
+    font-size: 18px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+}
