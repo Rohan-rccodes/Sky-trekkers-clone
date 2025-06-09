@@ -4,7 +4,7 @@ Sky Trekkers is a fully responsive frontend website built for an adventure trave
 
 ## 🚀 Live Demo
 
-👉 [View Website](https://your-github-username.github.io/sky-trekkers/)  
+👉 [View Website](https://rohan-rccodes.github.io/Sky-trekkers-clone/)  
 📌 Replace with your actual GitHub Pages link after deploying.
 
 ---
