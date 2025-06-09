@@ -60,8 +60,10 @@ body {
   color: #000;
   font-weight: 500;
 }
-
-.booking-btn {
+.nav-menu a:hover {
+  color: #d93900;
+}
+#booking-btn {
   background: #d93900;
   color: white;
   padding: 8px 14px;
